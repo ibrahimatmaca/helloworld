@@ -1,0 +1,82 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define Max 50
+
+void yazdirma(int yazilan[],int yazdirmaBoyut){
+	int i;
+	for(i=0;i<yazdirmaBoyut;i++)
+		printf("%d ", yazilan[i]);
+	printf("\n");
+}
+
+void KabarcikSiralama(int KabarcikDizi[],int KabarcikBoyut){
+	int i,j,a;
+	printf("Baslangic:");
+	for( a=0;a < KabarcikBoyut;a++)
+		printf("%d ",KabarcikDizi[a]);
+	printf("\n");
+	for(i=0;i<KabarcikBoyut;i++){
+		for(j=0;j<KabarcikBoyut-i;j++){
+			if(KabarcikDizi[j-1] > KabarcikDizi[j]){
+			  int tut = KabarcikDizi[j];
+			  KabarcikDizi[j]=KabarcikDizi[j-1];
+			  KabarcikDizi[j-1]=tut;
+			  yazdirma(KabarcikDizi,KabarcikBoyut);
+			}
+		}
+	}
+	int k;
+	printf("\nDizinin Son Hali:");
+	for(k=0;k<KabarcikBoyut;k++)
+		printf(" %d ",KabarcikDizi[k]);
+}
+
+void PermutasyonSiralama(int PermutasyonDizi[],int PermutasyonBoyut){
+	int tutucu,i,j,z,b,c;
+	int siraliDizi[PermutasyonBoyut];
+	printf("Baslangic: ");
+	for(z=0;z < PermutasyonBoyut;z++)
+		printf("%d ",PermutasyonDizi[z]);
+	printf("\n");
+	for(i=0; i<PermutasyonBoyut;i++) {
+        for(j=0; j<PermutasyonBoyut-1;j++) {
+            tutucu = PermutasyonDizi[j];
+            PermutasyonDizi[j] = PermutasyonDizi[j+1];
+            PermutasyonDizi[j+1] = tutucu;
+            yazdirma(PermutasyonDizi,PermutasyonBoyut);
+		}
+    }
+    for (b=0; i<PermutasyonBoyut;b++) {
+        for (c=0; c<= PermutasyonBoyut-1;c++) {
+        	if(PermutasyonDizi[c-1] > PermutasyonDizi[c]){
+			  tutucu = PermutasyonDizi[c];
+			  PermutasyonDizi[c]=PermutasyonDizi[c-1];
+			  PermutasyonDizi[c-1]=tutucu;
+			}
+    	}
+	}
+	int a;
+	printf("Dizinin son hali: ");
+    for(a=0;a<PermutasyonBoyut;a++)
+    	printf("%d ",PermutasyonDizi[a]);
+}
+
+int main(){
+	int dizi[Max],i,boyut,secim;
+	printf("Kabarcik ve Permutasyon Siralamaya hos geldiniz.Lutfen siralama icin eleman sayisini belirtiniz:");
+	scanf("%d",&boyut);
+	printf("Lutfen %d elemani giriniz:",boyut);
+	for(i=0;i < boyut;i++)
+		scanf("%d",&dizi[i]);
+	printf("Lutfen islem yapmak istediginiz siralamayi seciniz.\n");
+	printf("1-Kabarcik Siralama\n2-Permustasyon Siralama\n");
+	scanf("%d",&secim);
+	if(secim == 1){
+		KabarcikSiralama(dizi,boyut);
+	}
+	else if(secim == 2)
+		PermutasyonSiralama(dizi,boyut);
+	else
+		printf("Hatali giris yaptiniz.");
+	return 0;
+}
