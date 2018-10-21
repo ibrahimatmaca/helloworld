@@ -1,0 +1,16 @@
+#-*-coding:utf-8-*- 
+import random #burada rastgele bir sayı oluşturabilmesi için import ettik
+print("Tahmin Oyununa Hos geldiniz!")
+kontrol = raw_input("Oyun oynamak ister misin?(Y/N)")
+if(kontrol=="y" or kontrol=="Y"):
+    while(kontrol):
+        tahminEdilenSayi = int(input("Lutfen 0-9 arasinda bir tahminde bulunun:"))
+        randomUretilenSayi = random.randint(0,9) #random metod randint fonksiyonunu çağırarak belirttiğimiz aralıkta sayı üretiyor
+        if(tahminEdilenSayi == randomUretilenSayi): 
+            print("Tebrikler dogru tahmin:"+tahminEdilenSayi)
+            break
+        else:
+            print("Maalesef dogru sayi degil Tekrar dene!")
+else:
+    if(kontrol=="n" or kontrol=="N"):
+        print("Gule Gule!")
