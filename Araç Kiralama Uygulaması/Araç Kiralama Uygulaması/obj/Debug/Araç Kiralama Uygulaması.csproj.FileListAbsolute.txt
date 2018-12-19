@@ -1,0 +1,13 @@
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç Kiralama Uygulaması.csprojAssemblyReference.cache
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç_Kiralama_Uygulaması.Login.resources
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç_Kiralama_Uygulaması.Main.resources
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç_Kiralama_Uygulaması.Properties.Resources.resources
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç Kiralama Uygulaması.csproj.GenerateResource.cache
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç Kiralama Uygulaması.csproj.CoreCompileInputs.cache
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\bin\Debug\Araç Kiralama Uygulaması.exe.config
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\bin\Debug\Araç Kiralama Uygulaması.exe
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\bin\Debug\Araç Kiralama Uygulaması.pdb
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç Kiralama Uygulaması.exe
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç Kiralama Uygulaması.pdb
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç_Kiralama_Uygulaması.AracKiralama.resources
+C:\Users\ibrahim\source\repos\Araç Kiralama Uygulaması\Araç Kiralama Uygulaması\obj\Debug\Araç_Kiralama_Uygulaması.AracEkleme.resources
